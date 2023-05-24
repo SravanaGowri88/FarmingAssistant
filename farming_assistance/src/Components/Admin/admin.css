@@ -1,0 +1,84 @@
+#admin {
+    position: relative;
+    margin-left: 0%;
+    background-image: url('./farm343.jpeg');
+    min-width: 100%;
+    min-height: 200%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    
+  }
+  
+   .admin-header {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     margin-left: o;
+   }
+   
+   .admin-header-left h1 {
+     font-size: 5rem;
+     font-weight: 900;
+     line-height: 1.4;
+     text-transform: uppercase;
+     color: white;
+     position: relative;
+    
+    
+   }
+   
+   .admin-header h1 span {
+     display:block;
+   }
+   
+   h1 span:nth-child(1) {
+     font-weight: 700;
+   }
+   
+   h1 span:nth-child(2),
+   h1 span:nth-child(3) {
+     font-weight: 400;
+   }
+   
+   /* .admin-header h1::after {
+     content: "";
+     position: absolute;
+     left: 0;
+    
+     bottom: 0;
+     width: 80%;
+     height: 4px;
+     background:white;
+   } */
+   
+   /* .admin-header p {
+     margin: 3rem 0;
+     color: var(--color-white);
+     width: 70%;
+     font-size: medium;
+     font-weight: 600;
+     color:white;
+   } */
+
+   .admin-header-left,.admin-header-right{
+    margin-left: 3rem;
+     margin-right: 30rem;
+   }
+   /* .admin-header-right{
+    margin-left: 30rem;
+    margin-right: 10rem;
+   } */
+   .box2 {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.625rem;
+  }
+   
+   

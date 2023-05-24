@@ -1,0 +1,107 @@
+#supplier{
+    position:relative;
+    background-image: url('/src/Components/supplier/FARMER7.jpg');
+    min-width: 100%;
+    min-height: 500%;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.supplier-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+   
+    
+  }
+  .supplier-header-left h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    text-decoration:solid;
+   
+   
+   
+  }
+  
+  .Supplier-header h1 span {
+    display:block;
+   
+  }
+  
+  h1 span:nth-child(1) {
+    font-weight: 700;
+  }
+  
+  h1 span:nth-child(2),
+  h1 span:nth-child(3) {
+    font-weight: 400;
+  }
+  
+  .supplier-header h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 4px;
+    background:white;
+  }
+  
+  .supplier-header p {
+    margin: 3rem 0;
+    color: var(--color-white);
+    width: 70%;
+    font-size: medium;
+    font-weight: 600;
+  }
+  .supplier-header-right,.supplier-header-right{
+    margin-left: 3rem;
+    margin-right: 30rem;
+  }
+  .register{
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-left: 5rem;
+    color: white;
+    
+  }
+  .register button{
+    font: inherit;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 500;
+    padding: 0rem 3rem;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: white ;
+    color:black;
+    border:none;
+    transition: all 0.3s;
+    justify-content: center;
+  }
+  .register button:hover {
+    background-color: rgb(76, 215, 76);
+    color:white
+  }
+  .box {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    left:80%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    padding: 3.5rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.625rem;
+    align-items: left;
+
+    
+  }
+  
+  

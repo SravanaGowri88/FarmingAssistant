@@ -1,0 +1,66 @@
+.supplier {
+    max-width: 30rem;
+    margin: 6rem auto;
+    margin-left: 40rem ;
+    justify-content: center;
+    
+  }
+  .supplier label{
+    justify-content: center;
+    font-weight: 500;
+    color:black;
+    
+  }
+  
+  .supplier label,
+  .supplier input,
+  .supplier textarea {
+    font-size: medium;
+    text-align: center;
+    display:flex;
+    width: 150%;
+  }
+  
+  .supplier input,
+  .supplier textarea {
+    font: inherit;
+    font-size: medium;
+    padding: 0.25rem;
+  }
+  
+  .a_supplier {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .a_supplier button {
+    font: inherit;
+    cursor: pointer;
+    font-size: large;
+    padding: 0.5rem 3rem;
+    border: 3px solid rgb(7, 7, 7);
+    background-color: orangered;
+    color:black;
+    border:none;
+    transition: all 0.3s;
+    justify-content: center;
+  }
+  
+  .a_supplier a {
+    text-decoration: none;
+    
+    color: var(--color-gray-300);
+  }
+  
+  .a_supplier button:hover {
+    background-color: rgb(124, 70, 52);
+  }
+  
+  .a_supplier a:hover {
+    background-color: var(--color-gray-800);
+  }
+  .error{
+    color: red;
+  }

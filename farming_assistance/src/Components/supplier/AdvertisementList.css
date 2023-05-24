@@ -1,0 +1,37 @@
+.advertisement-list-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  .advertisement-card body{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    
+  }
+  .advertisement-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: box-shadow 0.3s ease-in-out;
+    font-size:small;
+    align-items: center;
+  }
+  
+  .advertisement-card:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.475);
+    color:white;
+  }
+  
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

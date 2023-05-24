@@ -1,0 +1,64 @@
+.form {
+    max-width: 30rem;
+    margin: 6rem auto;
+    margin-left: 40rem ;
+    justify-content: center;
+    
+  }
+  .form label{
+    justify-content: center;
+    font-weight: 500;
+    
+    
+  }
+  
+  .form label,
+  .form input,
+  .form textarea {
+    font-size: medium;
+    text-align: center;
+    display:flex;
+    width: 150%;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    font-size: medium;
+    padding: 0.25rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    font-size: large;
+    padding: 0.5rem 3rem;
+    border: 3px solid rgb(7, 7, 7);
+    background-color: orangered;
+    color:black;
+    border:none;
+    transition: all 0.3s;
+    justify-content: center;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    
+    color: var(--color-gray-300);
+  }
+  
+  .actions button:hover {
+    background-color: rgb(124, 70, 52);
+  }
+  
+  .actions a:hover {
+    background-color: var(--color-gray-800);
+  }
+ 

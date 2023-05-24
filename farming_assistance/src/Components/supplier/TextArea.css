@@ -1,0 +1,60 @@
+.text-area-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .text-area-label {
+    position: absolute;
+    top: 50%;
+    /* left: 20px; */
+    align-items: center;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #495057;
+    z-index: 1;
+  }
+  
+  .text-area-label.shrink {
+    top: 5px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .text-area {
+    height: 50px;
+    width:300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .text-area:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+  }
+  
+  .text-area:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+  }
+  
+  .text-area::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .text-area::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .text-area::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
