@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FarmingModelStoreContainer" CdmEntityContainer="FarmDBContext">
+    <EntitySetMapping Name="AdminLogins">
+      <EntityTypeMapping TypeName="FarmingModel.AdminLogin">
+        <MappingFragment StoreEntitySet="AdminLogin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertisements">
+      <EntityTypeMapping TypeName="FarmingModel.Advertisement">
+        <MappingFragment StoreEntitySet="Advertisement">
+          <ScalarProperty Name="Ad_Id" ColumnName="Ad_Id" />
+          <ScalarProperty Name="Crop_Name" ColumnName="Crop_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Crops">
+      <EntityTypeMapping TypeName="FarmingModel.Crop">
+        <MappingFragment StoreEntitySet="Crops">
+          <ScalarProperty Name="Crop_Id" ColumnName="Crop_Id" />
+          <ScalarProperty Name="Crop_Name" ColumnName="Crop_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FarmerLogins">
+      <EntityTypeMapping TypeName="FarmingModel.FarmerLogin">
+        <MappingFragment StoreEntitySet="FarmerLogin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierLogins">
+      <EntityTypeMapping TypeName="FarmingModel.SupplierLogin">
+        <MappingFragment StoreEntitySet="SupplierLogin">
+          <ScalarProperty Name="Supplier_ID" ColumnName="Supplier_ID" />
+          <ScalarProperty Name="Supplier_Name" ColumnName="Supplier_Name" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

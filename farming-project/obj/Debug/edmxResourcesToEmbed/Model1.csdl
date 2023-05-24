@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FarmingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminLogin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Advertisement">
+    <Key>
+      <PropertyRef Name="Ad_Id" />
+    </Key>
+    <Property Name="Ad_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Crop_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Crop">
+    <Key>
+      <PropertyRef Name="Crop_Id" />
+    </Key>
+    <Property Name="Crop_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Crop_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FarmerLogin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SupplierLogin">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Supplier_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="FarmDBContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminLogins" EntityType="Self.AdminLogin" />
+    <EntitySet Name="Advertisements" EntityType="Self.Advertisement" />
+    <EntitySet Name="Crops" EntityType="Self.Crop" />
+    <EntitySet Name="FarmerLogins" EntityType="Self.FarmerLogin" />
+    <EntitySet Name="SupplierLogins" EntityType="Self.SupplierLogin" />
+  </EntityContainer>
+</Schema>

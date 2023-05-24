@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FarmingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminLogin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Advertisement">
+    <Key>
+      <PropertyRef Name="Ad_Id" />
+    </Key>
+    <Property Name="Ad_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Crop_Name" Type="varchar" MaxLength="20" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Mobile" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Crops">
+    <Key>
+      <PropertyRef Name="Crop_Id" />
+    </Key>
+    <Property Name="Crop_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Crop_Name" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="FarmerLogin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="10" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="SupplierLogin">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Supplier_Name" Type="varchar" MaxLength="100" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="10" />
+    <Property Name="Address" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityContainer Name="FarmingModelStoreContainer">
+    <EntitySet Name="AdminLogin" EntityType="Self.AdminLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Advertisement" EntityType="Self.Advertisement" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Crops" EntityType="Self.Crops" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FarmerLogin" EntityType="Self.FarmerLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SupplierLogin" EntityType="Self.SupplierLogin" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
